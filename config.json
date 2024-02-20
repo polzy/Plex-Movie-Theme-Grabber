@@ -1,0 +1,17 @@
+{
+    "plex": {
+        "url": "http://localhost:32400",
+        "token": "TOKEN",
+        "movie_sections": ["films"]
+    },
+    "database": {
+        "host": "192.168.1.122",
+        "user": "USER",
+        "password": "PASSWORD",
+        "database": "movies_db"
+    },
+    "user_media": "user",
+    "valid_only": "no",
+    "tmdb_api_key": "TMDB_API"
+    
+}
