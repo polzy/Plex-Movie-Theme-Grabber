@@ -1,17 +1,34 @@
 {
     "plex": {
-        "url": "http://localhost:32400",
-        "token": "TOKEN",
-        "movie_sections": ["films"]
+      "url": "http://localhost:32400",
+      "token": "TOKEN",
+      "movie_sections": ["films"]
     },
     "database": {
-        "host": "192.168.1.122",
-        "user": "USER",
-        "password": "PASSWORD",
-        "database": "movies_db"
+      "host": "192.168.1.122",
+      "user": "USER",
+      "password": "PASSWORD",
+      "database": "movies_db"
     },
     "user_media": "user",
     "valid_only": "no",
-    "tmdb_api_key": "TMDB_API"
-    
-}
+    "tmdb_api_key": "TMDB_API",
+    "yt_dlp_options": {
+      "format": "bestaudio/best",
+      "postprocessors": [{
+        "key": "FFmpegExtractAudio",
+        "preferredcodec": "mp3"
+      }],
+      "quiet": true,
+      "no_warnings": true,
+      "ffmpeg_location": "C:\\ffmpeg\\bin\\ffmpeg.exe"
+    },
+    "paths": {
+        "local_songs": "./local_songs",
+        "valid_songs": "./local_songs/_Valid",
+        "to_validate_songs": "./local_songs/_to_validate"
+      },
+    "ignore_keywords": ["bande annonce", "trailer"],
+    "search_terms": ["theme song", "main theme"]
+  }
+  
