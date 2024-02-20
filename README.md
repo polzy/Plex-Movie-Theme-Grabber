@@ -1,25 +1,23 @@
-# Plex-Movie-Theme-Grabber
-This script, Plex Movie Theme Grabber, is designed to enhance your Plex movie watching experience by automatically fetching and integrating theme songs and additional metadata for your movie collection directly into Plex. It leverages The Movie Database (TMDB) API to find movie information based on IMDb IDs, downloads theme songs for movies, and updates local movie directories with fetched content. Additionally, it offers functionality to clean up and manage theme songs for blocked movies, ensuring that your Plex server remains organized and up-to-date.
+This GitHub repository hosts a collection of scripts designed to automate the enhancement of your Plex media server by adding theme songs and metadata to your movie collection. The repository comprises two main Python scripts and an upcoming HTML interface for easy song validation.
 
-Features:
+#Plex Movie Theme Grabber
+Automates fetching and integrating theme songs and metadata for movies in your Plex server. It leverages The Movie Database (TMDB) API for metadata and supports dynamic path configurations for storing theme songs.
 
-Fetches French titles and additional metadata for movies using TMDB API.
-Searches for movies on TMDB based on IMDb IDs.
-Downloads and integrates theme songs and metadata into local movie directories.
-Manages theme songs for blocked movies by removing or updating as necessary.
-Configurable through a JSON file, allowing for easy customization and flexibility.
-Utilizes Python's requests and PlexAPI for efficient data fetching and Plex server interaction.
-How to Use:
+#Plex Music Video Fetcher
+Utilizes yt-dlp to download theme songs from YouTube when direct theme song files are missing. It intelligently manages song downloads, avoiding blocked content and organizing songs based on validation status.
 
-Obtain an API key from TMDB and input it into the config.json file.
-Configure your Plex server details, database settings, and local song paths in config.json.
-Run the script and let it automate the process of enhancing your Plex movie collection.
-Requirements:
+#Upcoming: HTML Interface for Song Validation
+A user-friendly HTML interface will soon be added to this repository, allowing for easier validation of downloaded theme songs against the database. This interface aims to streamline the process of confirming whether a downloaded song is appropriate for the corresponding movie in your collection.
 
-Python 3.6 or later.
-PlexAPI, requests, and mysql.connector Python libraries.
-A valid TMDB API key.
-Access to a Plex server with an active token.
-This script is perfect for Plex enthusiasts looking to automate the enrichment of their movie library with theme songs and detailed metadata, creating a more immersive viewing experience.
-
-Note: This script is intended for personal use. Please ensure you have the rights to download and use the theme songs and metadata for your movie collection.
+#Key Features:
+Automated Theme Song Downloads: From YouTube using yt-dlp.
+Metadata Integration: Creates info.json for each movie.
+Smart Content Management: Handles valid, to-validate, and blocked songs.
+Database Connectivity: Updates movie information in a MySQL database.
+Easy Song Validation: Through an upcoming HTML interface linked to the database.
+Quick Start:
+Prerequisites: Python 3.6+, yt-dlp, mysql.connector, colorama, and FFmpeg.
+Configuration: Update database settings in the scripts and ensure paths to song directories are correctly set.
+Execution: Run the scripts to enhance your Plex movie collection with theme songs and metadata.
+Validation Interface: Stay tuned for the addition of an HTML interface for easy song validation.
+These tools are designed for personal use to improve your Plex viewing experience. Always ensure to comply with copyright laws and YouTube's terms of service.
