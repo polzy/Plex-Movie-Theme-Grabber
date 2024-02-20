@@ -1,23 +1,32 @@
-This GitHub repository hosts a collection of scripts designed to automate the enhancement of your Plex media server by adding theme songs and metadata to your movie collection. The repository comprises two main Python scripts and an upcoming HTML interface for easy song validation.
+# Enhancement Scripts for Plex Media Server
 
-#Plex Movie Theme Grabber
-Automates fetching and integrating theme songs and metadata for movies in your Plex server. It leverages The Movie Database (TMDB) API for metadata and supports dynamic path configurations for storing theme songs.
+As a novice programmer, I've embarked on a project to automate the enhancement of my Plex media server by adding theme songs and metadata to my movie collection. This GitHub repository contains my initial efforts in Python scripting and an upcoming HTML interface for song validation. I warmly welcome any improvements, suggestions, or contributions to refine these scripts further.
 
-#Plex Music Video Fetcher
-Utilizes yt-dlp to download theme songs from YouTube when direct theme song files are missing. It intelligently manages song downloads, avoiding blocked content and organizing songs based on validation status.
+## Plex Movie Theme Grabber
 
-#Upcoming: HTML Interface for Song Validation
-A user-friendly HTML interface will soon be added to this repository, allowing for easier validation of downloaded theme songs against the database. This interface aims to streamline the process of confirming whether a downloaded song is appropriate for the corresponding movie in your collection.
+This script fetches and integrates theme songs and metadata for movies in your Plex server using The Movie Database (TMDB) API. It's designed with flexibility in mind, supporting dynamic path configurations for storing theme songs.
 
-#Key Features:
-Automated Theme Song Downloads: From YouTube using yt-dlp.
-Metadata Integration: Creates info.json for each movie.
-Smart Content Management: Handles valid, to-validate, and blocked songs.
-Database Connectivity: Updates movie information in a MySQL database.
-Easy Song Validation: Through an upcoming HTML interface linked to the database.
-Quick Start:
-Prerequisites: Python 3.6+, yt-dlp, mysql.connector, colorama, and FFmpeg.
-Configuration: Update database settings in the scripts and ensure paths to song directories are correctly set.
-Execution: Run the scripts to enhance your Plex movie collection with theme songs and metadata.
-Validation Interface: Stay tuned for the addition of an HTML interface for easy song validation.
-These tools are designed for personal use to improve your Plex viewing experience. Always ensure to comply with copyright laws and YouTube's terms of service.
+## Plex Music Video Fetcher
+
+When direct theme song files are missing, this script comes into play, downloading theme songs from YouTube with `yt-dlp`. It smartly manages downloads, skipping blocked content and organizing songs by validation status.
+
+## Upcoming: HTML Interface for Song Validation
+
+To simplify the validation of downloaded theme songs against the database, I'm working on a user-friendly HTML interface. This addition aims to make it easier to verify the suitability of songs for the corresponding movies in your collection.
+
+### Key Features
+
+- **Automated Downloads:** Uses `yt-dlp` for theme song retrieval from YouTube.
+- **Metadata Management:** Automatically creates `info.json` files for each movie.
+- **Intelligent Song Handling:** Differentiates between valid, to-validate, and blocked songs.
+- **Database Integration:** Seamlessly updates movie information in a MySQL database.
+- **Ease of Validation:** The forthcoming HTML interface will facilitate easy song validation.
+
+### Getting Started
+
+1. **Requirements:** Python 3.6+, `yt-dlp`, `mysql.connector`, `colorama`, FFmpeg.
+2. **Setup:** Adjust the database configuration and song directory paths in the scripts.
+3. **Usage:** Enhance your Plex collection by running the scripts.
+4. **Validation:** Look out for the HTML interface for straightforward song validation.
+
+This project is a personal initiative to augment the Plex experience, adhering to copyright laws and YouTube's terms of service. Contributions to improve and refine these scripts are highly appreciated.
