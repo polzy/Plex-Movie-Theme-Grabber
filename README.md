@@ -24,7 +24,7 @@ To simplify the validation of downloaded theme songs against the database, I'm w
 
 ### Getting Started
 
-1. **Requirements:** Python 3.6+, `yt-dlp`, `mysql.connector`, `colorama`, FFmpeg.
+1. **Requirements:** Python 3.6+, `yt-dlp`, `mysql.connector`, FFmpeg.
 2. **Setup:** Adjust the database configuration and song directory paths in the scripts.
 3. **Usage:** Enhance your Plex collection by running the scripts.
 4. **Validation:** Look out for the HTML interface for straightforward song validation.
